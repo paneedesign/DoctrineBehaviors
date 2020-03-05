@@ -99,7 +99,7 @@ trait TranslatableMethods
         }
 
         $translation = $this->findTranslationByLocale($locale);
-        if ($translation and !$translation->isEmpty()) {
+        if ($translation) {
             return $translation;
         }
 
